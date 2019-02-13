@@ -1,0 +1,175 @@
+.about {
+    background-image: url('image/bg-about.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    .about__title {
+    color: #2f3234;
+    font-family: "gagalinregular";
+    font-size: rem(72px);
+    font-weight: 400;
+    margin-top: rem(120px);
+    margin-left: rem(358px);
+    @include tablets() {
+        margin-top: 32%;
+        margin-left: 23%;
+        font-size: 5.1rem;
+    }
+    @include phones() {
+        margin-top: 21%;
+        margin-left: 22%;
+        font-size: 3.8rem;
+    }
+    }
+    .about__list {
+        display: flex;
+        margin-left: rem(82px);
+        margin-top: rem(33px);
+        @include tablets() {
+            margin-top: 8%;
+            margin-left: 0.6%;
+        }
+        @include phones() {
+            flex-direction: column;
+            margin-top: 1%;
+            margin-left: 15.6%;
+        }
+    }
+}
+.about__item {
+    width: rem(285px);
+    display: flex;
+    flex-direction: column;
+    @include tablets() {
+        width: 14.8125rem;
+    }
+    @include phones() {
+        flex-direction: row;
+        width: 100%;
+    }
+    .about__item-title {
+        color: #2f3234;
+        font-family: "lifehackmedium";
+        font-size: rem(24px);
+        font-weight: 500;
+        letter-spacing: rem(-0.6px);
+        text-align: center;
+        margin-top: rem(24px);
+        margin-left: rem(3px);
+        line-height: rem(30px);
+        @include tablets() {
+            font-size: 1.7rem;
+        }
+        @include phones() {
+            text-align: left;
+            margin-bottom: 6%;
+            font-size: 1.9rem;
+        }
+        
+    }   
+    .about__item-description {
+        width: rem(287px);
+        opacity: 0.8;
+        color: #2f3234;
+        font-family: "ubuntulight";
+        font-size: rem(14px);
+        font-weight: 300;
+        text-align: center;
+        margin-top: rem(15px);
+        margin-left: rem(4px);
+        line-height: rem(24px);
+        @include tablets() {
+            width: 16.2375rem;
+            font-size: 0.995rem;
+            margin-left: -0.4rem;
+            line-height: 1.7rem;
+            margin-top: 1.4375rem;
+        }
+        @include phones() {
+            text-align: left;
+            width: 24.2375rem;
+            margin-left: 2%;
+        }
+    }   
+}
+.about__item-icon {
+    @include phones() {
+        width: 20%;
+    }
+}
+.about__info-block {
+    @include phones() {
+        text-align: left;
+    }
+}
+.about__item:last-child .about__item-description {
+    margin-top: 4%;
+    margin-left: -3%;
+    @include phones() {
+        margin-left: 0%;
+    }
+}
+.about__item:nth-child(2) {
+    margin-left: rem(35px);
+    margin-right: rem(36px);
+    @include tablets() {
+        margin-right: 2.99rem;
+        margin-left: 2.6875rem;
+    }
+    @include phones() {
+        margin-right: 0%;
+        margin-left: 0%;
+        margin-top: 5%;
+        margin-bottom: 3%;
+    }
+}
+.about__item:first-child .about__item-icon {
+    width: rem(97px);
+    height: rem(89px);
+    margin-left: rem(99px);
+    margin-top: rem(11px);
+    @include tablets() {
+        margin-left: 32%;
+    }
+    @include phones() {
+        margin-left: -15%;
+        margin-top: 5%;
+        width: 7.5rem;
+        height: 6.825rem;
+        margin-right: 6%;
+    }
+}
+.about__item:nth-child(2) .about__item-icon {
+    width: rem(73px);
+    height: rem(85px);
+    margin-top: rem(11px);
+    margin-left: rem(110px);
+    margin-bottom: rem(3px);
+    @include tablets() {
+        margin-left: 32%;
+    }
+    @include phones() {
+        width: 5.7rem;
+        height: 6.625rem;
+        margin-left: -12%;
+        margin-top: 4%;
+        margin-right: 9%;
+    }
+}
+.about__item:last-child .about__item-icon {
+    width: rem(88px);
+    height: rem(75px);
+    margin-top: rem(14px);
+    margin-left: rem(103px);
+    margin-bottom: rem(14px);
+    @include tablets() {
+        margin-left: 32%;
+    }
+    @include phones() {
+        margin-left: -14%;
+        margin-top: 0.5%;
+        margin-right: 9%;
+        width: 6.3rem;
+        height: 5.8rem;
+    }
+}

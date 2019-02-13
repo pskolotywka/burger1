@@ -1,0 +1,22 @@
+
+
+// breakpoints
+
+$tablets: 768px;
+$phones: 480px;
+
+
+
+@import "fonts/fonts.scss";
+@import "blocks/media.scss";
+@import "blocks/basic.scss";
+@import "blocks/promo.scss";
+@import "blocks/about.scss";
+@import "blocks/description.scss";
+@import "blocks/team.scss";
+@import "blocks/setmenu.scss";
+@import "blocks/reviews.scss";
+@import "blocks/video.scss";
+@import "blocks/form.scss";
+@import "blocks/map.scss";
+
